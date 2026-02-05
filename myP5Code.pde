@@ -47,6 +47,15 @@ var drawStar = function(){
   textSize(starSize);
   text("⭐",starX, starY);
 };
+  
+  var drawFace = function (){
+  var faceSize = random(2,12);
+  var faceX = mouseX + random(-12,12);
+  var faceY = mouseY + random(-12,12);
+  textSize(faceSize);
+  text("😋💙",faceX, faceY);
+  };
+
 
 //🟡mouseClicked Function - will run when the mouse is clicked
 mouseClicked = function(){
@@ -56,4 +65,7 @@ mouseClicked = function(){
   drawStar();
   drawStar();
   drawStar();
+
+  drawFace();
+  drawFace();
 };
